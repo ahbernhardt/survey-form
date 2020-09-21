@@ -1,0 +1,149 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--
+Hello Camper!
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding!
+- The freeCodeCamp Team
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" >
+    <meta name="author" content="Anh Nguyen">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="statics/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+            name="description"
+            content="FCC Web Design Project"
+    />
+    <link rel="apple-touch-icon" href="statics/logo192.png" />
+    <title>Anh Nguyen | Survey Form</title>
+</head>
+
+<body>
+<main>
+    <svg height="0" width="0">
+        <defs>
+            <clipPath id="svgPath">
+                <path fill="#FFFFFF"
+                      stroke="#000000"
+                      stroke-width="1.5794"
+                      stroke-miterlimit="10"
+                      d="M 120 0 Q 200 100 100 200 Q 0 300 100 400 Q 200 550 50 700 C 0 850 100 1100 350 1050 Q 500 1200 600 900 C 800 650 500 700 600 550 C 750 350 650 350 600 250 Q 550 100 700 0 " />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <div class="stars">
+        <img src="https://images.unsplash.com/photo-1530362502708-d02c8f093039?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+    </div>
+
+    <div class="container">
+        <div class="rectangle"></div>
+        <div class="content">
+            <div class="text-content">
+                <h1 id="title"><span>FCC</span><br>Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform</p>
+            </div>
+            <div class="content-form-clip">
+                <div class="content-form">
+                    <form id="survey-form">
+                        <div class="form-group">
+                            <label class="label" id="name-label" for="name">Name: </label>
+                            <input class="input" type="text" name="name" id="name" placeholder="Enter your name" required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="label" id="email-label" for="email">Email: </label>
+                            <input class="input" type="email" name="email" id="email" placeholder="Enter your Email" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="label" id="number-label" for="number">Age: </label>
+                            <input class="input" type="number" name="age" id="number" min="10" max="99" placeholder="25" />
+                        </div>
+
+                        <div class="form-group">
+                            <p class="label">Which option best describes your current role?</p>
+                            <select class="input" id="dropdown" name="role" required>
+                                <option disabled selected value>Select current role</option>
+                                <option value="student">Student</option>
+                                <option value="job">Full Time Job</option>
+                                <option value="learner">Full Time Learner</option>
+                                <option value="preferNo">Prefer not to say</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <p class="label">Would you recommend freeCodeCamp to a friend?</p>
+                            <label class="radio">
+                                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely
+                            </label>
+                            <label class="radio">
+                                <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe
+                            </label>
+                            <label class="radio">
+                                <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not
+                                sure
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <p class="label">What is your favorite feature of freeCodeCamp?</p>
+                            <select class="input form-control" id="most-like" name="mostLike" required>
+                                <option disabled selected value>Select an option</option>
+                                <option value="challenges">Challenges</option>
+                                <option value="projects">Projects</option>
+                                <option value="community">Community</option>
+                                <option value="openSource">Open Source</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <p class="label">What would you like to see improved?</p>
+                            <label class="radio">
+                                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
+                                Front-end Projects
+                            </label>
+                            <label class="radio">
+                                <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end
+                                Projects</label>
+                            <label class="radio"><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Data
+                                Visualization</label>
+                            <label class="radio"><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Challenges</label>
+                            <label class="radio"><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" />Open Source
+                                Community</label>
+                            <label class="radio"><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Gitter help
+                                rooms</label>
+                            <label class="radio"><input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Videos</label>
+                            <label class="radio"><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />City Meetups</label>
+                            <label class="radio"><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" />Wiki</label>
+                            <label class="radio"><input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Forum</label>
+                            <label class="radio"><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional
+                                Courses</label>
+                        </div>
+
+                        <div class="form-group">
+                            <p class="label">Any comments or suggestions?</p>
+                            <textarea class="input"/>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" id="submit" class="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+
+</html>
