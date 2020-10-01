@@ -2,7 +2,7 @@
 
 > Build a Survey form. This is the second project of [FreeCodeCamp Responsive Web Design Certification](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 
-Check for [Live Demo](https://anhnguyen.page/fcc-survey-form/)
+Check for [Live Demo](https://anguyen0208.github.io/fcc-survey-form/)
 
 ## Screenshot
 
